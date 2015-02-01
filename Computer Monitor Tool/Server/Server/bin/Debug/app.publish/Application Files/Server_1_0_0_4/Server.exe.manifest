@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Server.exe" version="1.0.0.4" publicKeyToken="ad5be4f53667efdc" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Server.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetriCam.dll" size="610304">
+      <assemblyIdentity name="MetriCam" version="1.4.5.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8GGcNe9pKDQUL4XmhyaXIRoKdPY106wxv92RJJYlVtw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\MetriCam.resources.dll" size="9216">
+      <assemblyIdentity name="MetriCam.resources" version="1.4.5.0" language="de" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZwEv1CXK3Nx4vkyQfZjiCSUqriEypglnGMjdRSa9bFw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\MetriCam.resources.dll" size="8704">
+      <assemblyIdentity name="MetriCam.resources" version="1.4.5.0" language="en" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qMWc7sQAdF3iv+n+eZteHtVecwUioSmv3qXb8167TSs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Server.exe" size="79872">
+      <assemblyIdentity name="Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VFAx0oWA/lf6Lmx/MO7tQ0H+FRqkpFfSBjbjJY8vaII=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCPCam.dll" size="30208">
+      <assemblyIdentity name="TCPCam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hxvz02qU3xLnFDL4hwYjhjjmMNTTJQB30JiOSTzJhRQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCPCamActivex.dll" size="18944">
+      <assemblyIdentity name="TCPCamActivex" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4y5q65EbuZwW6nvPwNaigN5U2WlRYw9luOMs3F88Mvc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebCam.dll" size="101376">
+      <assemblyIdentity name="WebCam" version="1.4.6.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SUp5uu/kI4GxU+USCdQ68ABHWuGDOiPY+ufBYwaYgyE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Server.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JORDAN-PC\Jordan" issuerKeyHash="1fdf4e4c466488d5c66d87cf5f2168423675b764" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qUla5mswtkYdHRZGvrk4Y0UwGJxp8v3Z8wmAEzarRnE=</DigestValue></Reference></SignedInfo><SignatureValue>fVPgp21rPpjepdWFEPZKkCUqQwaDz7CbM/WLt2lqu0cGlLxgT/t5Hhu6OVIq6HpOv5m7BVv5XVurphAeTdP3XxqLTP4lkvnwNJ4zfWWtmLnJK9dCGdINoUPVaCBgKn8sZxl6QqIfIoxTJQye/mvwaSrDf3ipiVjBEKJSR8TTrvE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zl39Yz8exI9waR2D+NnovVHHKXJpTNZ8BrSbH+ZhZZBf6cVWxK3qQ86MqjmzaFHtnvHQ6QEdAz08Z398E0xR0JGppEsG3MXEM2Py1229N5O7q+7Pn/EAfTlUb5++dBCSVOOiZycXF9bL0D1sBuS8jGRinvmtSdtwq1+lSJxg/y8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7146ab36138009f3d9fdf2699c1830456338b9be46161d1d46b6306be65a49a9" Description="" Url=""><as:assemblyIdentity name="Server.exe" version="1.0.0.4" publicKeyToken="ad5be4f53667efdc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JORDAN-PC\Jordan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yTo6yi2qlxMPkUiLTlpoQkhJ0557H9WsEtWqYNkT8Gw=</DigestValue></Reference></SignedInfo><SignatureValue>dhEx7xzgKg9dAZUDUXJXUXOdqz8XAXSN0YAyg4pHM+tUijsIfd9+PDHxwaDe+5gdgXTPjg6y895GLIpaJxcPs5opJD1QjMGSBWYe5835pyhvGJoigKFoy4VIQH9he8oOKd2jkLktAxxEhWz/JYjSPUiUK1u+4T5puijDaXRPJd8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zl39Yz8exI9waR2D+NnovVHHKXJpTNZ8BrSbH+ZhZZBf6cVWxK3qQ86MqjmzaFHtnvHQ6QEdAz08Z398E0xR0JGppEsG3MXEM2Py1229N5O7q+7Pn/EAfTlUb5++dBCSVOOiZycXF9bL0D1sBuS8jGRinvmtSdtwq1+lSJxg/y8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQcZKGHSas7aJPE301dO0lMTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAASgBPAFIARABBAE4ALQBQAEMAXABKAG8AcgBkAGEAbjAeFw0xNDA3MDkyMjU0NTBaFw0xNTA3MTAwNDU0NTBaMCsxKTAnBgNVBAMeIABKAE8AUgBEAEEATgAtAFAAQwBcAEoAbwByAGQAYQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOXf1jPx7Ej3BpHYP42ei9UccpcmlM1nwGtJsf5mFlkF/pxVbErepDzoyqObNoUe2e8dDpAR0DPTxnf3wTTFHQkamkSwbcxcQzY/LXbb03k7ur7s+f8QB9OVRvn750EJJU46JnJxcX1svQPWwG5LyMZGKe+a1J23CrX6VInGD/LwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC8yx9mxnE2CNLhIIMlS45yaBuB2CRy1dPi/s2A6By40LZaE/ZJa/HvE+6J5iQQsu8agKe6WelkiXaDPE1mGwF/u2Jhl36EX2oG7wGHuBppMEqJcA/CQjiYM7dF8Seo2lYqCcLOpz1sYOrdcYNLfN/92Pju1hBQAf9h4zK9ipJGw</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
